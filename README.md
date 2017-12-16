@@ -7,8 +7,7 @@ Persian Caldroid
 دانلود اپ نمونه
 -----------------------------
 <ul>
-    <li> <a href="https://play.google.com/store/apps/details?id=com.byagowi.persiancalendar" >Google Play</a> </li>
-    <li> <a href="https://github.com/ebraminio/DroidPersianCalendar/releases/" >Github</a> </li>
+    <li> <a href="https://github.com/dariushm2/PersianCaldroid/releases/" >Github</a> </li>
 </ul>
 
 اپ هایی که از کتابخانه Persian Caldroid استفاده می کنند
