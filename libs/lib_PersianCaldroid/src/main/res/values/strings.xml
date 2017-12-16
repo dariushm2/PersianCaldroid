@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingTranslation">
+
+    <string name="widget_name">تقویم پارسی</string>
+    <string name="btnOk">تایید</string>
+    <string name="btnCancel">لغو</string>
+
+    <string name="holidaysIncompletenessWarning">مناسبت‌های این سال در تقویم کامل نیست.</string>
+    <string name="shouldBeUpdated">مناسبت‌های تقویم امسال کامل نیست، احتمالاً نیاز به به‌روزرسانی این برنامه، در صورت وجود، دارید.</string>
+
+
+
+
+</resources>

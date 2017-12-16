@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Persian Caldroid Sample</string>
+    <string name="calendarView">نمای تقویم</string>
+    <string name="pickDate">انتخاب تاریخ</string>
+</resources>

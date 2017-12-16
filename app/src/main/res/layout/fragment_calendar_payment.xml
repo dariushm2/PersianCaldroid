@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rvCalendarList"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="right"
+    android:layout_marginBottom="10dp"
+    android:cacheColorHint="@android:color/transparent"
+    android:choiceMode="singleChoice"
+    android:paddingBottom="5dp"
+    android:clipToPadding="false"
+    android:scrollbarStyle="outsideOverlay" />

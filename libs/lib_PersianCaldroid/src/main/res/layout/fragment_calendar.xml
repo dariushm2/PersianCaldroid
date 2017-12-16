@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/about_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:layoutDirection="ltr"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/pc_title_view"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:gravity="center_vertical|center_horizontal">
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/next"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                app:srcCompat="@drawable/ic_keyboard_arrow_right"
+                android:gravity="center"
+                android:layout_marginRight="10dp"
+
+                android:tint="@color/light_month_switch"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/pc_month_year_textview"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_toLeftOf="@+id/next"
+                android:layout_toRightOf="@+id/prev"
+                android:gravity="center_horizontal|center_vertical"
+                android:textSize="22sp" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/prev"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                app:srcCompat="@drawable/ic_keyboard_arrow_left"
+                android:tint="@color/light_month_switch"/>
+
+        </RelativeLayout>
+        <android.support.v4.view.ViewPager
+            android:id="@+id/calendar_pager"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/grid_calendar_height"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"/>
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+</LinearLayout>
