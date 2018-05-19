@@ -281,14 +281,10 @@ public class Utils {
 
     public void loadLanguageResource() {
         @RawRes int messagesFile;
-        String lang = getAppLanguage();
 
-        if (lang.equals("fa-AF"))
-            messagesFile = R.raw.messages_fa_af;
-        else if (lang.equals("ps"))
-            messagesFile = R.raw.messages_ps;
-        else
-            messagesFile = R.raw.messages_fa;
+
+
+        messagesFile = R.raw.messages_fa;
 
         persianMonths = new String[12];
         islamicMonths = new String[12];

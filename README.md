@@ -1,37 +1,44 @@
 Persian Caldroid
 =============================
-<div lang="fa" dir="rtl">ویجت تقویم پارسی اندروید<br />
-ویجت تقویم پارسی ساده، رایگان و آزاد اندروید. دارای دو حالت نمایش دیالوگی برای انتخاب تاریخ در هنگام دریافت تقویم از کاربر و نمای تقویم برای نمایش رویدادهای کاربر، روی تقویم پارسی.</div>
------------------------------
+<ul>
+    <li><b>Persian DatePicker</b><br>
+                This api privides the users a nice and modern looking calendar to pick a date from.</li>
+    <li><b>Persian CalendarView</b><br>
+                This api lets the users to have a full funtion CaledarView to mark their events on specific dates.</li>
+</ul>
 
-دانلود اپ نمونه
+ 
+
+
+Download Sample App
 -----------------------------
 <ul>
     <li> <a href="https://github.com/dariushm2/PersianCaldroid/releases/" >Github</a> </li>
 </ul>
 
-اپ هایی که از کتابخانه Persian Caldroid استفاده می کنند
+Apps that are using PersianCaldroid library
 -----------------------------
 <ul>
-    <li> <a href="https://cafebazaar.ir/app/com.dariushm2.PaymentManager/?l=fa" >Cafe Bazaar</a> </li>
+    <li> <a href="https://cafebazaar.ir/app/com.dariushm2.PaymentManager/?l=fa" >Payments Manger</a> </li>
 </ul>
 
-نحوه استفاده از کتابخانه در اندروید استودیو
+Adding this library to your project
 -----------------------------
-نحوه ی اضافه کردن کتابخانه در اندروید استودیو
+Gradle
 --------------
 
-        //add this to build.gradle project level file
+        /* add this to build.gradle project level file */
         allprojects {
         		repositories {
         			...
         			maven { url 'https://jitpack.io' }
         		}
         }
-        //add this to build.gradle app level file
+        
+        /* Add this to build.gradle app level file */
         implementation 'com.github.dariushm2:PersianCaldroid:1.0.0'
         
-نحوه ی فراخوانی دیالوگ تقویم، برای دریافت تاریخ از کاربر
+How to call DatePicker
 --------------
    
         PersianCaldroidDialog persianCaldroidDialog = new PersianCaldroidDialog()
@@ -49,29 +56,31 @@ Persian Caldroid
         persianCaldroidDialog.setSelectedDate(new PersianDate(1396, 9, 24);
         persianCaldroidDialog.show(getActivity().getSupportFragmentManager(), PersianCaldroidDialog.class.getName());
     
-نحوه ی فراخوانی تقویم برای نمایش رویداد های کاربر 
+How to add Persian CalendarView
 --------------
     
-        ---Java code---
+        /* Java code */
         
         PersianCaldroidFragment persianCaldroidFragment = new PersianCaldroidFragment();
-        //set font
+        // Set font
         persianCaldroidFragment.setTypeface(customFont);
         persianCaldroidFragment.setOnDateClickListener(new PersianCaldroidFragment.OnDateClickListener() {
             @Override
             public void onDateClick(PersianDate persianDate) {
-                //do something when a date is clicked
+            
+                // Do something when a date is clicked
                 
             }
         });
         persianCaldroidFragment.setOnChangeMonthListener(new PersianCaldroidFragment.OnChangeMonthListener() {
             @Override
             public void onChangeMonth() {
-                //do something when user switches to previous or next month
+            
+                // Do something when user switches to previous or next month
                 
             }
         });
-        //add dates with a specified color you want to be circled on calendar
+        /* Add dates with a specified colors, you want to be circled on calendar */
         HashMap<PersianDate, Integer> backgroundForDatesMap = new HashMap<>();
         backgroundForDatesMap.put(new PersianDate(), R.color.blue);
         persianCaldroidFragment.setBackgroundResourceForDates(backgroundForDatesMap);
@@ -106,11 +115,11 @@ Persian Caldroid
         </android.support.v7.widget.CardView>
         
         
-        ** For more complicated views such as showing list items below the calendar please take a look at the sample app
+        /* For more complicated views such as showing list items below the calendar, please take a look at the sample app */
     
 License
 -----------------------------
-Copyright (C) 2017  dariush.malek@gmail.com
+Copyright (C) 2018  dariush.malek86@gmail.com
 
 This program is free software: you can redistribute it and/or modify 
 it under the terms of the GNU General Public License as published by 
