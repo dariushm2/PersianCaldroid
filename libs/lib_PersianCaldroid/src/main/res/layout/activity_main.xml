@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:id="@+id/drawer">
 
-    <android.support.v7.widget.LinearLayoutCompat
+    <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_height="match_parent"
         android:layout_width="match_parent"
         android:orientation="vertical"
@@ -25,6 +25,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Select Date"/>
-    </android.support.v7.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
 
 </LinearLayout>

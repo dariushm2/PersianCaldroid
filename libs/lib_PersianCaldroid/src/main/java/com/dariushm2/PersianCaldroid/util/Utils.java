@@ -2,10 +2,13 @@ package com.dariushm2.PersianCaldroid.util;
 
 
 import android.content.Context;
-import android.support.annotation.RawRes;
+
 import android.text.TextUtils;
 import android.util.Log;
 import android.widget.Toast;
+
+import androidx.annotation.RawRes;
+
 import com.dariushm2.PersianCaldroid.R;
 import com.dariushm2.PersianCaldroid.entity.DayEntity;
 import com.dariushm2.PersianCaldroid.entity.EventEntity;

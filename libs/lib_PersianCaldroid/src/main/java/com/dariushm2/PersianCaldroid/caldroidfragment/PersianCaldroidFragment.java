@@ -6,12 +6,14 @@ import android.graphics.Typeface;
 import android.os.Build;
 import android.os.Bundle;
 import android.provider.CalendarContract;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
-import android.support.v4.content.LocalBroadcastManager;
-import android.support.v4.view.ViewPager;
-import android.support.v7.widget.AppCompatImageView;
-import android.support.v7.widget.AppCompatTextView;
+
+import androidx.annotation.Nullable;
+import androidx.appcompat.widget.AppCompatImageView;
+import androidx.appcompat.widget.AppCompatTextView;
+import androidx.fragment.app.Fragment;
+import androidx.localbroadcastmanager.content.LocalBroadcastManager;
+import androidx.viewpager.widget.ViewPager;
+
 import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -126,11 +128,11 @@ public class PersianCaldroidFragment extends Fragment
         currentMonthFragmentPosition = Constants.MONTHS_LIMIT / 2;
 
 
-        txtMonthYear = (AppCompatTextView) view.findViewById(R.id.pc_month_year_textview);
+        txtMonthYear = view.findViewById(R.id.pc_month_year_textview);
 
         txtMonthYear.setTypeface(typeface);
 
-        monthViewPager = (ViewPager) view.findViewById(R.id.calendar_pager);
+        monthViewPager = view.findViewById(R.id.calendar_pager);
 
         calendarFragmentAdapter = new CalendarFragmentAdapter(getChildFragmentManager());
         monthViewPager.setAdapter(calendarFragmentAdapter);
@@ -138,8 +140,8 @@ public class PersianCaldroidFragment extends Fragment
 
         monthViewPager.addOnPageChangeListener(this);
 
-        AppCompatImageView prev = (AppCompatImageView) view.findViewById(R.id.prev);
-        AppCompatImageView next = (AppCompatImageView) view.findViewById(R.id.next);
+        AppCompatImageView prev = view.findViewById(R.id.prev);
+        AppCompatImageView next = view.findViewById(R.id.next);
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

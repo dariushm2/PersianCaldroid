@@ -6,8 +6,9 @@ import android.graphics.drawable.Drawable;
 import android.graphics.drawable.GradientDrawable;
 import android.graphics.drawable.ShapeDrawable;
 import android.os.Build;
-import android.support.v4.content.ContextCompat;
-import android.support.v7.widget.RecyclerView;
+import androidx.core.content.ContextCompat;
+import androidx.recyclerview.widget.RecyclerView;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -70,7 +71,7 @@ public class MonthFragmentAdapter extends RecyclerView.Adapter<MonthFragmentAdap
         ViewHolder(View itemView) {
             super(itemView);
 
-            num = (TextView) itemView.findViewById(R.id.num);
+            num = itemView.findViewById(R.id.num);
             today = itemView.findViewById(R.id.today);
             selectDay = itemView.findViewById(R.id.select_day);
             event = itemView.findViewById(R.id.event);

@@ -1,10 +1,19 @@
 package com.dariushm2.PersianCaldroidSample;
 
-import android.support.v4.app.FragmentTransaction;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentTransaction;
+
 import android.os.Bundle;
+import android.util.Log;
 
 import com.dariushm2.PersianCaldroidSample.CaldroidFragment.CaldroidFragment;
+
+import java.util.Calendar;
+import java.util.Locale;
+
+import calendar.CivilDate;
+import calendar.DateConverter;
+import calendar.PersianDate;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -12,6 +21,13 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        PersianDate persianDate = DateConverter.civilToPersian(new CivilDate(Calendar.getInstance(new Locale("fa"))));
+        Log.e("Date", persianDate.toStringInPersian());
+
+        CivilDate civilDate = DateConverter.persianToCivil(new PersianDate());
+
+        Log.e("Gregorian Date", civilDate.toString());
 
         MainFragment mainFragment = new MainFragment();
 

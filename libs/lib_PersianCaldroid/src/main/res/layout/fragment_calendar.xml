@@ -9,7 +9,7 @@
     android:layoutDirection="ltr"
     android:orientation="vertical">
 
-    <android.support.v7.widget.LinearLayoutCompat
+    <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
@@ -19,7 +19,7 @@
             android:layout_height="40dp"
             android:layout_gravity="center_vertical|center_horizontal"
             android:gravity="center_vertical|center_horizontal">
-            <android.support.v7.widget.AppCompatImageView
+            <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/next"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -30,7 +30,7 @@
 
                 android:tint="@color/light_month_switch"/>
 
-            <android.support.v7.widget.AppCompatTextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/pc_month_year_textview"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
@@ -39,7 +39,7 @@
                 android:gravity="center_horizontal|center_vertical"
                 android:textSize="22sp" />
 
-            <android.support.v7.widget.AppCompatImageView
+            <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/prev"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -50,7 +50,7 @@
                 android:tint="@color/light_month_switch"/>
 
         </RelativeLayout>
-        <android.support.v4.view.ViewPager
+        <androidx.viewpager.widget.ViewPager
             android:id="@+id/calendar_pager"
             android:layout_gravity="center"
             android:layout_width="match_parent"
@@ -58,6 +58,6 @@
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"/>
 
-    </android.support.v7.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
 
 </LinearLayout>

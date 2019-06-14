@@ -24,7 +24,7 @@
         android:background="@drawable/circle_current_day_light"
         android:id="@+id/today"/>
 
-    <android.support.v7.widget.AppCompatTextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:layout_width="@dimen/day_item_select_size"
         android:layout_height="@dimen/day_item_select_size"
         android:gravity="center"

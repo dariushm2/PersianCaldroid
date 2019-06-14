@@ -9,7 +9,7 @@
     android:layoutDirection="ltr"
     android:orientation="vertical">
 
-    <android.support.v7.widget.LinearLayoutCompat
+    <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
@@ -23,12 +23,12 @@
 
         </LinearLayout>
 
-        <android.support.v4.view.ViewPager
+        <androidx.viewpager.widget.ViewPager
             android:id="@+id/calendar_pager"
             android:layout_width="match_parent"
             android:layout_height="@dimen/grid_calendar_height" />
         <include layout="@layout/layout_ok_cancel_buttons"/>
 
-    </android.support.v7.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
 
 </ScrollView>
