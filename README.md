@@ -38,7 +38,7 @@ Gradle
         }
         
         /* Add this to build.gradle app level file */
-        implementation 'com.github.dariushm2:PersianCaldroid:1.0.0'
+        implementation 'com.github.dariushm2:PersianCaldroid:1.0.1'
         
 How to call DatePicker
 --------------
